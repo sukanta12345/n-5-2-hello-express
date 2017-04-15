@@ -1,0 +1,4 @@
+git init
+
+ls -a
+git add filename
