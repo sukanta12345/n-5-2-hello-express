@@ -2,3 +2,17 @@ git init
 
 ls -a
 git add filename
+
+generating ssh key in git bash
+
+ssh-keygen -t rsa -b 4096 -C "sukanta.gain@gmail.com"
+ls -al ~/.ssh
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_rsa
+clip < ~/.ssh/id_rsa.pub
+ssh -T git@github.com
+
+create repository in github
+
+git remote add origin https://github.com/sukanta12345/n-5-2-hello-express.git
+git push -u origin master
